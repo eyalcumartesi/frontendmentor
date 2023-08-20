@@ -1,0 +1,45 @@
+/* Media query for 375px width */
+@media screen and (max-width: 376px) {
+	body {
+		height: fit-content; /* Adjust this value as needed */
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column; /* Change to column layout */
+		align-items: center;
+		width: fit-content; /* Adjust this value as needed */
+		margin: 0 auto; /* Center the container */
+		gap: 0;
+	}
+
+	.results-container {
+		width: 100%; /* Take up full width */
+		border-radius: 0; /* Remove border radius for full-width */
+		padding: 10px 60px;
+		height: 40%;
+		border-radius: 0px 0px 30px 30px;
+	}
+
+	.description {
+		padding: 0;
+		margin-bottom: 30px;
+	}
+
+	.summary-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%; /* Take up full width */
+		padding: 20px 30px; /* Adjust padding as needed */
+		margin: 0;
+	}
+
+	.summary-list {
+		margin: 0;
+	}
+
+	button:active,
+	button:hover {
+		background: hsl(224, 30%, 27%);
+	}
+}
